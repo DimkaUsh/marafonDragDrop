@@ -38,8 +38,11 @@ body {
   background: #f7f6f7;
   padding: 0.8rem 1rem;
   color: #828282;
-  text-align: center;
   cursor: grab;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .item:active {
@@ -48,7 +51,9 @@ body {
 
 .placeholder {
   width: 150px;
-  height: 66px;
+  min-height: 266px;
+  max-height: 100%;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -73,4 +78,9 @@ body {
 
 .hover {
   display: none;
+}
+
+.select {
+  border-radius: 4%;
+  border-top: 5px solid #209cff;
 }
