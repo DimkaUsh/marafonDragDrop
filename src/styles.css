@@ -49,6 +49,9 @@ body {
 .placeholder {
   width: 150px;
   height: 66px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .start {
@@ -61,4 +64,13 @@ body {
 
 .done {
   background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.dragged {
+  border-color: #209cff;
+  background-color: rgba(98, 98, 98, 0.3);
+}
+
+.hover {
+  display: none;
 }
